@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #000000;
+    color: #F6F6F6;
+    font-size: 17px;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15%;
+}
+
+.titulo{
+    font-size: 36px;
+    font-family: "Black Ops One", sans-serif;
+    text-align: start;
+}
+
+.titulo-destaque{
+    color: #e95157;
+}
+
+.apresentacao-conteudo{
+    margin: 10%;
+    font-family: "Press Start 2P", sans-serif;
+    text-align: justify;
+}
+
+/*botões-----------------------------------------------------*/
+.botoes-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao{
+    background-color: #e95157;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 5%;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #531253;
+    font-weight: bold;
+    font-size: 20px;
+}
