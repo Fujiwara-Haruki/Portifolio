@@ -1,5 +1,5 @@
-# Meu portifólio
-Olá, bem vindo ao meu projeto de portifólio.
+# 🌈✨ Meu portifólio ✨🌈
+👋 Olá, bem vindo ao meu projeto de portifólio.
 
 ## Ferramentas utilizadas:
 *HTML
@@ -7,4 +7,4 @@ Olá, bem vindo ao meu projeto de portifólio.
 *Flexbox
 
 ## Feito por:
-### Miguel Fujiwara
+### 💛 Miguel Fujiwara
