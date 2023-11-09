@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Black+Ops+One&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --footer_height: 55px;
+    --header_height: 60px;
+    --cor_primaria: #000000;
+    --cor_secundaria: #F6F6F6;
+    --cor_terciaria: #e95157;
+
+    --fonte_primaria: "Press Start 2P", sans-serif;
+    --fonte_secundaria: "Black Ops One", sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor_primaria);
+    color: var(--cor_secundaria);
+    font-size: 1.15rem;
+}
+/* Cabeçalho */
+
+.cabecalho_menu{
+    display: flex;
+    height: var(--header_height);
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.menu_link{
+    font-family: var(--fonte_secundaria);
+    font-size: 20px;
+    color: var(--cor_terciaria);
+    text-decoration: none;
+}
+
+
+
+/* Meio */
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 15vw;
+    min-height: calc(100vh - var(--header_height) - var(--footer_height));
+}
+
+.titulo{
+    font-size: 2.22rem;
+    font-family: var(--fonte_secundaria);
+    text-align: start;
+}
+
+.titulo-destaque{
+    color: var(--cor_terciaria);
+}
+
+.apresentacao-conteudo{
+    margin: 0 5%;
+    font-family: var(--fonte_primaria);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+p{
+    line-height: 1.3rem;
+}
+
+/* Foto */
+.foto{
+    height: 55%;
+    max-height: 400px;
+    padding: 8px;
+    margin: 5%;
+    border: 2px dashed var(--cor_terciaria);
+}
+
+/*botões-----------------------------------------------------*/
+.subtitulo-botoes{
+    font-size: 1.5rem;
+}
+
+.botoes-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: transparent;
+    border: 3px outset var(--cor_terciaria);
+    padding: 1.51rem;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor_terciaria);
+    font-weight: bold;
+    font-size: 1.2;
+    transition: 0.3s
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: var(--cor_terciaria);
+    border-color: var(--cor_secundaria);
+    color: var(--cor_secundaria);
+    
+}
+
+/* logo botao */
+.img{
+    height: 33px;
+}
+
+
+/* Rodapé */
+.rodape{
+    display: flex;
+    background-color: var(--cor_terciaria);
+    color: var(--cor_primaria);
+    height: var(--footer_height);
+    font-family: var(--fonte_secundaria);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1009px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        
+    }
+}
+
+@media (max-width: 800px){
+    .apresentacao{
+        padding: 2% 5%;
+    }
+}
+
+@media (max-width: 372px){
+    .foto{
+        width: 80vw;
+    }
+}
